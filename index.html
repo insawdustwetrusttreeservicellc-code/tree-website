@@ -1,149 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>In Sawdust We Trust Tree Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Sawdust We Trust Tree Service | Tree Removal & Trimming</title>
+  <meta
+    name="description"
+    content="In Sawdust We Trust Tree Service provides professional tree removal, tree trimming, pruning, stump grinding, storm cleanup, and emergency tree service. Call now for a free estimate."
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: #fff;
-  text-align: center;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-header {
-  background: linear-gradient(135deg, #ff6600, #ff3300);
-  padding: 20px;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 26px;
-}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-.phone {
-  font-size: 20px;
-  margin-top: 5px;
-}
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-/* HERO */
-.hero {
-  padding: 60px 20px;
-}
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-.hero h2 {
-  font-size: 30px;
-  color: #ff6600;
-}
+    .topbar {
+      background: #111111;
+      border-bottom: 1px solid rgba(255, 136, 0, 0.25);
+      padding: 12px 0;
+    }
 
-.hero p {
-  font-size: 18px;
-  margin: 10px 0;
-}
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
 
-/* BUTTON */
-.btn {
-  display: inline-block;
-  background: #ff6600;
-  color: #000;
-  padding: 15px 25px;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 15px;
-}
+    .topbar-text {
+      font-size: 0.95rem;
+      color: #f5f5f5;
+      letter-spacing: 0.3px;
+    }
 
-/* SERVICES */
-.services {
-  border: 2px solid #ff6600;
-  margin: 30px;
-  padding: 20px;
-  border-radius: 10px;
-}
+    .topbar-phone a {
+      color: #ff8c00;
+      font-weight: 700;
+      font-size: 1rem;
+    }
 
-.services li {
-  list-style: none;
-  padding: 8px;
-  font-size: 18px;
-}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10, 10, 10, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255, 136, 0, 0.2);
+    }
 
-/* REVIEWS */
-.reviews {
-  padding: 20px;
-  background: #111;
-}
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-.review {
-  margin: 15px 0;
-}
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #ff8c00;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
 
-/* FOOTER */
-footer {
-  padding: 30px;
-  font-size: 14px;
-}
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
 
-/* STICKY CALL BAR */
-.call-bar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #ff6600;
-  padding: 15px;
-  font-size: 20px;
-  font-weight: bold;
-}
+    .nav-links a {
+      color: #ffffff;
+      font-weight: 600;
+      transition: 0.25s;
+    }
 
-.call-bar a {
-  color: #000;
-  text-decoration: none;
-}
-</style>
-</head>
+    .nav-links a:hover {
+      color: #ff8c00;
+    }
 
-<body>
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff6a00, #ff9900);
+      color: #000;
+      font-weight: 800;
+      padding: 14px 24px;
+      border-radius: 999px;
+      transition: 0.25s ease;
+      box-shadow: 0 10px 24px rgba(255, 128, 0, 0.25);
+    }
 
-<header>
-  <h1>In Sawdust We Trust</h1>
-  <div class="phone">📞 941-812-7819</div>
-</header>
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(255, 128, 0, 0.35);
+    }
 
-<div class="hero">
-  <h2>Professional Tree Removal & Trimming</h2>
-  <p>Serving Manatee • Sarasota • Pinellas County</p>
-  <p>Reliable Service • Free Estimates • Emergency Work Available</p>
-  <a class="btn" href="tel:9418127819">Call Now</a>
-</div>
+    .btn-outline {
+      display: inline-block;
+      border: 2px solid #ff8c00;
+      color: #ff8c00;
+      font-weight: 800;
+      padding: 12px 22px;
+      border-radius: 999px;
+      transition: 0.25s ease;
+    }
 
-<div class="services">
-  <h3>Our Services</h3>
-  <ul>
-    <li>✔ Tree Removal</li>
-    <li>✔ Tree Trimming</li>
-    <li>✔ Storm Cleanup</li>
-    <li>✔ Emergency Tree Service</li>
-    <li>✔ Stump Grinding</li>
-  </ul>
-</div>
+    .btn-outline:hover {
+      background: #ff8c00;
+      color: #000;
+      transform: translateY(-2px);
+    }
 
-<div class="reviews">
-  <h3>★★★★★</h3>
-  <div class="review">Fast, reliable, and affordable.</div>
-  <div class="review">Showed up quickly and got the job done right.</div>
-</div>
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)),
+        radial-gradient(circle at top right, rgba(255, 140, 0, 0.2), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(255, 100, 0, 0.18), transparent 30%),
+        #0a0a0a;
+      padding: 90px 0 80px;
+    }
 
-<footer>
-  Proudly serving Manatee County, Sarasota County, and Pinellas County<br>
-  In Sawdust We Trust Tree Service
-</footer>
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
 
-<div class="call-bar">
-  <a href="tel:9418127819">📞 CALL NOW - 941-812-7819</a>
-</div>
+    .hero h1 {
+      font-size: 3.3rem;
+      line-height: 1.05;
+      font-weight: 900;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
 
-</body>
-</html>
+    .hero h1 span {
+      color: #ff8c00;
+      text-shadow: 0 0 20px rgba(255, 140, 0, 0.25);
+    }
+
+    .hero p {
+      font-size: 1.12rem;
+      color: #e6e6e6;
+      max-width: 760px;
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-point {
+      border: 1px solid rgba(255, 136, 0, 0.25);
+      background: rgba(255, 255, 255, 0.03);
+      color: #f8f8f8;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .hero-card {
+      background: linear-gradient(180deg, rgba(255,140,0,0.12), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255, 136, 0, 0.25);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+    }
+
+    .hero-card h3 {
+      font-size: 1.8rem;
+      color: #ff8c00;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    .hero-card p {
+      margin-bottom: 14px;
+      color: #ededed;
+      font-size: 1rem;
+    }
+
+    .hero-card strong {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 18px;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #ffffff;
+    }
+
+    .section-title span {
+      color: #ff8c00;
+    }
+
+    .section-subtitle {
+      max-width: 800px;
+      margin: 0 auto 48px;
+      text-align: center;
+      color: #d0d0d0;
+      font-size: 1.06rem;
+    }
+
+    .about {
+      background: #111111;
+    }
+
+    .about-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .about-card {
+      background: #161616;
+      border: 1px solid rgba(255, 136, 0, 0.2);
+      border-radius: 22px;
+      padding: 32px;
+    }
+
+    .about-card h3 {
+      color: #ff8c00;
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .about-card p {
+      color: #e8e8e8;
+      margin-bottom: 14px;
+    }
+
+    .services {
+      background: #0b0b0b;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: linear-gradient(180deg, #151515 0%, #0f0f0f 100%);
+      border: 1px solid rgba(255, 136, 0, 0.18);
+      border-radius: 22px;
+      padding: 28px;
+      transition: 0.25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 136, 0, 0.45);
+      box-shadow: 0 18px 35px rgba(0,0,0,0.35);
+    }
+
+    .service-card h3 {
+      color: #ff8c00;
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .service-card p {
+      color: #e5e5e5;
+      font-size: 1rem;
+    }
+
+    .why-us {
+      background: #111111;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      background: #171717;
+      padding: 26px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 136, 0, 0.18);
+      text-align: center;
+    }
+
+    .why-card h3 {
+      color: #ff8c00;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+    }
+
+    .why-card p {
+      color: #dddddd;
+      font-size: 0.98rem;
+    }
+
+    .cta {
+      background:
+        linear-gradient(rgba(0,0,0,0.75
