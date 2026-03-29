@@ -1,601 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>In Sawdust We Trust Tree Service</title>
-  <meta name="description" content="Tree removal, tree trimming, storm cleanup, stump grinding, and emergency tree service in Manatee, Sarasota, and Pinellas County, Florida." />
-  <style>
-    :root {
-      --bg: #050505;
-      --bg2: #111111;
-      --card: #161616;
-      --text: #ffffff;
-      --muted: #cfcfcf;
-      --orange: #ff6a00;
-      --orange2: #ff8c1a;
-      --border: rgba(255,255,255,0.08);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In Sawdust We Trust Tree Service</title>
 
-    * {
-      box-sizing: border-box;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
-      color: var(--text);
-      line-height: 1.5;
-    }
+header {
+  background: linear-gradient(135deg, #ff6600, #ff3300);
+  padding: 20px;
+}
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
 
-    .container {
-      width: calc(100% - 32px);
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+.phone {
+  font-size: 20px;
+  margin-top: 5px;
+}
 
-    .topbar {
-      background: #000;
-      border-bottom: 1px solid var(--border);
-      padding: 10px 0;
-      font-size: 14px;
-      color: var(--muted);
-      text-align: center;
-    }
+/* HERO */
+.hero {
+  padding: 60px 20px;
+}
 
-    header {
-      background: linear-gradient(135deg, var(--orange), var(--orange2));
-      color: #000;
-      padding: 18px 0;
-    }
+.hero h2 {
+  font-size: 30px;
+  color: #ff6600;
+}
 
-    .header-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+.hero p {
+  font-size: 18px;
+  margin: 10px 0;
+}
 
-    .brand {
-      font-weight: 900;
-      font-size: 24px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background: #ff6600;
+  color: #000;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 15px;
+}
 
-    .header-buttons {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
+/* SERVICES */
+.services {
+  border: 2px solid #ff6600;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 20px;
-      border-radius: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
+.services li {
+  list-style: none;
+  padding: 8px;
+  font-size: 18px;
+}
 
-    .btn-dark {
-      background: #000;
-      color: #fff;
-    }
+/* REVIEWS */
+.reviews {
+  padding: 20px;
+  background: #111;
+}
 
-    .btn-light {
-      background: #fff;
-      color: #000;
-    }
+.review {
+  margin: 15px 0;
+}
 
-    .hero {
-      padding: 56px 0 36px;
-    }
+/* FOOTER */
+footer {
+  padding: 30px;
+  font-size: 14px;
+}
 
-    .hero-box {
-      background: linear-gradient(180deg, #161616 0%, #0c0c0c 100%);
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 40px 24px;
-      text-align: center;
-    }
+/* STICKY CALL BAR */
+.call-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ff6600;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-    .eyebrow {
-      display: inline-block;
-      background: rgba(255,106,0,0.12);
-      color: #ffb47a;
-      border: 1px solid rgba(255,106,0,0.28);
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 16px;
-    }
-
-    h1 {
-      margin: 0 0 14px;
-      font-size: 48px;
-      line-height: 0.95;
-      text-transform: uppercase;
-    }
-
-    .accent {
-      color: var(--orange);
-    }
-
-    .lead {
-      max-width: 760px;
-      margin: 0 auto 14px;
-      font-size: 20px;
-      color: #f0f0f0;
-    }
-
-    .sub {
-      max-width: 760px;
-      margin: 0 auto 24px;
-      font-size: 17px;
-      color: var(--muted);
-    }
-
-    .badges {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
-
-    .badge {
-      background: #101010;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 10px 14px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    section {
-      padding: 18px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 18px;
-    }
-
-    .section-title h2 {
-      margin: 0 0 8px;
-      font-size: 34px;
-      text-transform: uppercase;
-    }
-
-    .section-title p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .card {
-      background: linear-gradient(180deg, #151515 0%, #0d0d0d 100%);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 22px;
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      color: var(--orange);
-      font-size: 22px;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .service-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-
-    .service {
-      background: linear-gradient(180deg, #151515 0%, #0d0d0d 100%);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px;
-    }
-
-    .service strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 19px;
-    }
-
-    .service span {
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .county {
-      background: linear-gradient(135deg, rgba(255,106,0,0.14), rgba(255,106,0,0.04));
-      border: 1px solid rgba(255,106,0,0.22);
-      border-radius: 18px;
-      padding: 22px;
-      text-align: center;
-    }
-
-    .county h3 {
-      margin: 0 0 8px;
-      font-size: 22px;
-    }
-
-    .county p {
-      margin: 0;
-      color: #ffc79b;
-    }
-
-    .review .stars {
-      color: var(--orange2);
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .review p {
-      font-style: italic;
-      margin-bottom: 10px;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, var(--orange), var(--orange2));
-      color: #000;
-      border-radius: 22px;
-      padding: 28px;
-      text-align: center;
-    }
-
-    .cta h2 {
-      margin: 0 0 10px;
-      text-transform: uppercase;
-      font-size: 34px;
-    }
-
-    .cta p {
-      margin: 0 0 18px;
-      font-weight: 700;
-    }
-
-    form {
-      display: grid;
-      gap: 12px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 15px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: #0e0e0e;
-      color: #fff;
-      font-size: 16px;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    .submit-btn {
-      background: linear-gradient(135deg, var(--orange), var(--orange2));
-      color: #000;
-      border: none;
-      padding: 15px 18px;
-      border-radius: 12px;
-      font-size: 16px;
-      font-weight: 900;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      color: #9d9d9d;
-      padding: 30px 16px 95px;
-      font-size: 14px;
-    }
-
-    .sticky-call {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(135deg, var(--orange), var(--orange2));
-      z-index: 9999;
-    }
-
-    .sticky-call a {
-      display: block;
-      text-align: center;
-      padding: 16px;
-      color: #000;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-    }
-
-    @media (max-width: 900px) {
-      .grid-3,
-      .grid-2,
-      .service-list {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 38px;
-      }
-
-      .section-title h2,
-      .cta h2 {
-        font-size: 28px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .header-buttons,
-      .hero-buttons {
-        width: 100%;
-      }
-
-      .header-buttons .btn,
-      .hero-buttons .btn {
-        width: 100%;
-        text-align: center;
-      }
-
-      .brand {
-        font-size: 20px;
-      }
-
-      h1 {
-        font-size: 32px;
-      }
-
-      .lead {
-        font-size: 18px;
-      }
-    }
-  </style>
+.call-bar a {
+  color: #000;
+  text-decoration: none;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="topbar">
-    Tree Removal • Tree Trimming • Storm Cleanup • Emergency Service • Stump Grinding
-  </div>
+<header>
+  <h1>In Sawdust We Trust</h1>
+  <div class="phone">📞 941-812-7819</div>
+</header>
 
-  <header>
-    <div class="container header-inner">
-      <div class="brand">In Sawdust We Trust</div>
-      <div class="header-buttons">
-        <a class="btn btn-dark" href="tel:7276233995">Pinellas: 727-623-3995</a>
-        <a class="btn btn-light" href="tel:9418127819">Call Now: 941-812-7819</a>
-      </div>
-    </div>
-  </header>
+<div class="hero">
+  <h2>Professional Tree Removal & Trimming</h2>
+  <p>Serving Manatee • Sarasota • Pinellas County</p>
+  <p>Reliable Service • Free Estimates • Emergency Work Available</p>
+  <a class="btn" href="tel:9418127819">Call Now</a>
+</div>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-box">
-          <div class="eyebrow">Free estimates • Fast response • Emergency tree service</div>
-          <h1>The <span class="accent">Lead Machine</span> Tree Service Website</h1>
-          <p class="lead">
-            Fast, affordable tree removal, tree trimming, storm cleanup, and stump grinding in Manatee, Sarasota, and Pinellas County.
-          </p>
-          <p class="sub">
-            Big call buttons. Clean trust-building layout. Straight to the point so customers know exactly who to call.
-          </p>
+<div class="services">
+  <h3>Our Services</h3>
+  <ul>
+    <li>✔ Tree Removal</li>
+    <li>✔ Tree Trimming</li>
+    <li>✔ Storm Cleanup</li>
+    <li>✔ Emergency Tree Service</li>
+    <li>✔ Stump Grinding</li>
+  </ul>
+</div>
 
-          <div class="badges">
-            <div class="badge">Free Estimates</div>
-            <div class="badge">Fast Response</div>
-            <div class="badge">Emergency Service</div>
-            <div class="badge">Local Florida Service</div>
-          </div>
+<div class="reviews">
+  <h3>★★★★★</h3>
+  <div class="review">Fast, reliable, and affordable.</div>
+  <div class="review">Showed up quickly and got the job done right.</div>
+</div>
 
-          <div class="hero-buttons">
-            <a class="btn btn-light" href="tel:9418127819">Call Bradenton / Sarasota</a>
-            <a class="btn btn-dark" href="#estimate">Get Free Estimate</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<footer>
+  Proudly serving Manatee County, Sarasota County, and Pinellas County<br>
+  In Sawdust We Trust Tree Service
+</footer>
 
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <h2>Why People Call</h2>
-          <p>Make it clear, make it easy, make the phone ring.</p>
-        </div>
-        <div class="grid-3">
-          <div class="card">
-            <h3>Fast Response</h3>
-            <p>When a tree is hanging over a roof or driveway, people want someone who answers and moves quickly.</p>
-          </div>
-          <div class="card">
-            <h3>Professional Look</h3>
-            <p>A clean website builds trust before the customer even makes the call.</p>
-          </div>
-          <div class="card">
-            <h3>Built To Convert</h3>
-            <p>Repeated call buttons and a simple quote form give people an easy next step.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Our Services</h2>
-          <p>The jobs that bring in real calls.</p>
-        </div>
-        <div class="service-list">
-          <div class="service">
-            <strong>Tree Removal</strong>
-            <span>Safe removal of dead, damaged, hazardous, or unwanted trees.</span>
-          </div>
-          <div class="service">
-            <strong>Tree Trimming</strong>
-            <span>Cut back dangerous limbs and clean up overgrowth.</span>
-          </div>
-          <div class="service">
-            <strong>Storm Cleanup</strong>
-            <span>Fast cleanup after storms, fallen limbs, and debris.</span>
-          </div>
-          <div class="service">
-            <strong>Emergency Tree Service</strong>
-            <span>Quick help when a tree becomes a safety issue.</span>
-          </div>
-          <div class="service">
-            <strong>Stump Grinding</strong>
-            <span>Remove stumps and finish the job the right way.</span>
-          </div>
-          <div class="service">
-            <strong>Free Estimates</strong>
-            <span>Easy quotes for homeowners and property owners.</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="cta">
-          <h2>Need Tree Work Done Fast?</h2>
-          <p>Call now and get your estimate started today.</p>
-          <a class="btn btn-dark" href="tel:9418127819">Call 941-812-7819</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <h2>Service Areas</h2>
-          <p>Focused on the counties you want to dominate.</p>
-        </div>
-        <div class="grid-3">
-          <div class="county">
-            <h3>Manatee County</h3>
-            <p>Tree removal, trimming, cleanup, and emergency service.</p>
-          </div>
-          <div class="county">
-            <h3>Sarasota County</h3>
-            <p>Fast estimates and reliable work for homes and properties.</p>
-          </div>
-          <div class="county">
-            <h3>Pinellas County</h3>
-            <p>Use the Pinellas line for local service and quick response.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-title">
-          <h2>Reviews</h2>
-          <p>Trust helps people pick up the phone.</p>
-        </div>
-        <div class="grid-3">
-          <div class="card review">
-            <div class="stars">★★★★★</div>
-            <p>"Fast, professional, and easy to work with. Got the job done right."</p>
-            <strong>Happy Customer</strong>
-          </div>
-          <div class="card review">
-            <div class="stars">★★★★★</div>
-            <p>"Needed storm cleanup fast and they handled it without wasting time."</p>
-            <strong>Local Homeowner</strong>
-          </div>
-          <div class="card review">
-            <div class="stars">★★★★★</div>
-            <p>"Fair pricing, quick estimate, and the property looked way better after."</p>
-            <strong>Property Owner</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="estimate">
-      <div class="container">
-        <div class="section-title">
-          <h2>Get A Free Estimate</h2>
-          <p>Call now or send your info.</p>
-        </div>
-        <div class="grid-2">
-          <div class="card">
-            <h3>Call Us</h3>
-            <p style="margin-bottom: 14px;">The fastest way to get booked is to make contact easy.</p>
-            <p><strong>Bradenton / Sarasota:</strong> 941-812-7819</p>
-            <p><strong>Pinellas County:</strong> 727-623-3995</p>
-            <div style="margin-top: 16px; display: grid; gap: 10px;">
-              <a class="btn btn-light" href="tel:9418127819">Call 941-812-7819</a>
-              <a class="btn btn-dark" href="tel:7276233995">Call 727-623-3995</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Send Your Info</h3>
-            <p style="margin-bottom: 14px;">This form is visual for now until we hook it up to email.</p>
-            <form>
-              <input type="text" placeholder="Your name" />
-              <input type="tel" placeholder="Phone number" />
-              <input type="text" placeholder="City or county" />
-              <textarea placeholder="Tell us what tree work you need done"></textarea>
-              <button type="submit" class="submit-btn">Request Free Estimate</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    In Sawdust We Trust Tree Service<br />
-    Serving Manatee County, Sarasota County, and Pinellas County, Florida
-  </footer>
-
-  <div class="sticky-call">
-    <a href="tel:9418127819">Call Now • 941-812-7819</a>
-  </div>
+<div class="call-bar">
+  <a href="tel:9418127819">📞 CALL NOW - 941-812-7819</a>
+</div>
 
 </body>
 </html>
