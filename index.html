@@ -1,209 +1,318 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>In Sawdust We Trust Tree Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Sawdust We Trust Tree Service</title>
+  <meta
+    name="description"
+    content="In Sawdust We Trust Tree Service provides tree removal, tree trimming, storm cleanup, emergency tree service, and stump grinding in Manatee, Sarasota, and Pinellas County, Florida."
+  />
+  <style>
+    :root {
+      --black: #050505;
+      --black-2: #111111;
+      --black-3: #1a1a1a;
+      --orange: #ff6a00;
+      --orange-2: #ff8c1a;
+      --white: #ffffff;
+      --gray: #cccccc;
+      --gray-2: #9a9a9a;
+      --border: rgba(255, 255, 255, 0.08);
+      --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      --radius: 18px;
+      --max-width: 1180px;
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: #fff;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-/* STICKY CALL BAR (MONEY MAKER) */
-.call-bar {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #ff6600;
-  text-align: center;
-  padding: 15px;
-  font-size: 22px;
-  font-weight: bold;
-  z-index: 999;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.call-bar a {
-  color: #000;
-  text-decoration: none;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(255, 106, 0, 0.14), transparent 24%),
+        linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+      color: var(--white);
+      line-height: 1.5;
+    }
 
-/* HEADER */
-header {
-  background: linear-gradient(135deg, #ff6600, #ff3300);
-  text-align: center;
-  padding: 25px;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 28px;
-}
+    .container {
+      width: min(var(--max-width), calc(100% - 28px));
+      margin: 0 auto;
+    }
 
-.phone {
-  font-size: 20px;
-  margin-top: 5px;
-}
+    .topbar {
+      background: #000;
+      border-bottom: 1px solid var(--border);
+    }
 
-/* HERO */
-.hero {
-  background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600') no-repeat center/cover;
-  padding: 80px 20px;
-  text-align: center;
-}
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--gray);
+    }
 
-.hero h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
+    .main-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 0;
+      flex-wrap: wrap;
+    }
 
-/* BUTTON */
-.btn {
-  display: inline-block;
-  background: #ff6600;
-  color: #000;
-  padding: 15px 25px;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-}
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
-/* TRUST BAR */
-.trust {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  font-size: 16px;
-}
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--orange), var(--orange-2));
+      color: #000;
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      font-weight: 900;
+      box-shadow: var(--shadow);
+      flex: 0 0 auto;
+    }
 
-/* SERVICES */
-.section {
-  padding: 30px 20px;
-  text-align: center;
-}
+    .brand-text h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.05;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
 
-.services {
-  border: 2px solid #ff6600;
-  border-radius: 10px;
-  padding: 20px;
-}
+    .brand-text p {
+      margin: 3px 0 0;
+      font-size: 12px;
+      color: #ffb477;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
 
-.services li {
-  list-style: none;
-  padding: 10px;
-  font-size: 18px;
-}
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-/* REVIEWS */
-.reviews {
-  background: #111;
-  padding: 30px;
-}
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      border-radius: 14px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      transition: 0.2s ease;
+      box-shadow: var(--shadow);
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
 
-.review {
-  margin-bottom: 20px;
-  font-style: italic;
-}
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
-/* FORM */
-.form input, .form textarea {
-  width: 90%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  border: none;
-}
+    .btn-primary {
+      background: linear-gradient(135deg, var(--orange), var(--orange-2));
+      color: #000;
+    }
 
-.form button {
-  background: #ff6600;
-  border: none;
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-}
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: var(--border);
+      color: var(--white);
+    }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #000;
-  font-size: 14px;
-}
-</style>
-</head>
+    .hero {
+      padding: 56px 0 28px;
+    }
 
-<body>
+    .hero-box {
+      background:
+        radial-gradient(circle at top right, rgba(255, 106, 0, 0.22), transparent 25%),
+        linear-gradient(180deg, #131313 0%, #090909 100%);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 40px 28px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
 
-<!-- HEADER -->
-<header>
-  <h1>In Sawdust We Trust</h1>
-  <div class="phone">📞 941-812-7819</div>
-</header>
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 106, 0, 0.12);
+      border: 1px solid rgba(255, 106, 0, 0.3);
+      color: #ffb477;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
 
-<!-- HERO -->
-<div class="hero">
-  <h2>FAST TREE REMOVAL & TRIMMING</h2>
-  <p>Serving Manatee • Sarasota • Pinellas County</p>
-  <a class="btn" href="tel:9418127819">CALL NOW</a>
-</div>
+    .hero h2 {
+      margin: 0 0 16px;
+      font-size: clamp(34px, 7vw, 68px);
+      line-height: 0.95;
+      text-transform: uppercase;
+      letter-spacing: -1.5px;
+    }
 
-<!-- TRUST -->
-<div class="trust">
-  ⭐ 5-Star Rated • Licensed & Insured • Free Estimates • Emergency Service
-</div>
+    .hero h2 .accent {
+      color: var(--orange);
+    }
 
-<!-- SERVICES -->
-<div class="section">
-  <h2>Our Services</h2>
-  <div class="services">
-    <ul>
-      <li>✔ Tree Removal</li>
-      <li>✔ Tree Trimming</li>
-      <li>✔ Storm Cleanup</li>
-      <li>✔ Emergency Tree Service</li>
-      <li>✔ Stump Grinding</li>
-    </ul>
-  </div>
-</div>
+    .hero p.lead {
+      max-width: 820px;
+      margin: 0 auto 18px;
+      font-size: 20px;
+      color: #e8e8e8;
+    }
 
-<!-- REVIEWS -->
-<div class="reviews">
-  <h2>What Customers Say</h2>
-  <div class="review">"Fast, professional, and affordable. Highly recommend!"</div>
-  <div class="review">"Showed up same day and got the job done perfectly."</div>
-</div>
+    .hero p.sub {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      font-size: 17px;
+      color: var(--gray);
+    }
 
-<!-- FORM -->
-<div class="section">
-  <h2>Get a Free Estimate</h2>
-  <div class="form">
-    <input type="text" placeholder="Your Name"><br>
-    <input type="tel" placeholder="Phone Number"><br>
-    <textarea placeholder="What do you need done?"></textarea><br>
-    <button>Submit</button>
-  </div>
-</div>
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 26px;
+    }
 
-<!-- FOOTER -->
-<footer>
-  Serving Manatee, Sarasota & Pinellas County<br>
-  In Sawdust We Trust Tree Service
-</footer>
+    .hero-badges span {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #101010;
+      border: 1px solid var(--border);
+      font-weight: 700;
+      font-size: 14px;
+    }
 
-<!-- STICKY CALL BAR -->
-<div class="call-bar">
-  <a href="tel:9418127819">📞 CALL NOW - 941-812-7819</a>
-</div>
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-</body>
-</html>
+    .section {
+      padding: 24px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .section-title h3 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      text-transform: uppercase;
+    }
+
+    .section-title p {
+      margin: 0;
+      color: var(--gray);
+      font-size: 17px;
+    }
+
+    .cards-3,
+    .cards-2 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .cards-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+      background: linear-gradient(180deg, #151515 0%, #0d0d0d 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h4 {
+      margin: 0 0 10px;
+      font-size: 23px;
+      color: var(--orange);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--gray);
+      font-size: 16px;
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .service-item {
+      background: linear-gradient(180deg, #151515 0%, #0d0d0d 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .service-item strong {
+      display: block;
+      font-size: 19px;
+      margin-bottom: 8px;
+      color: var(--white);
+    }
+
+    .
