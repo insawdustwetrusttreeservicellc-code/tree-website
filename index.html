@@ -1,638 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="XG4BffhK_glGHc-meMO01js7rIx5Q87J2CvLxKdR7U4" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Venice FL Tree Service | Sarasota County Tree Removal & Home Services</title>
-<meta name="description" content="In Sawdust We Trust Tree Service provides professional tree removal, trimming, storm cleanup, stump grinding, emergency tree service, and additional home services in Venice, Sarasota County, Nokomis, Osprey, Englewood, North Port, Sarasota, and select Manatee County areas." />
-<link rel="canonical" href="https://www.insawdustwetrusttreeservice.com/" />
+<title>Venice FL Tree Service | Sarasota County Tree Removal</title>
+<meta name="description" content="Tree removal, trimming, storm cleanup, and home services in Venice and Sarasota County. Call now for fast, professional service." />
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+
 body{
   font-family:Arial,Helvetica,sans-serif;
-  background:#05080d;
+  background:#03060b;
   color:#fff;
-  line-height:1.6;
-  padding-bottom:95px;
+  padding-bottom:90px;
 }
-a{color:#00aaff;text-decoration:none}
-a:hover{text-decoration:underline}
-img{max-width:100%;display:block}
-.container{max-width:1180px;margin:0 auto;padding:0 20px}
 
 :root{
   --blue:#00aaff;
   --blue2:#0077cc;
-  --dark:#05080d;
-  --card:#0f1722;
-  --card2:#111c2b;
-  --text:#ffffff;
-  --muted:#d9e6f2;
 }
 
+/* TOP BAR */
 .top-bar{
-  background:#02050a;
-  border-bottom:2px solid var(--blue);
+  background:#000;
   text-align:center;
-  padding:14px 20px;
+  padding:15px;
   font-weight:900;
-  font-size:16px;
-  box-shadow:0 0 18px rgba(0,170,255,.25);
+  border-bottom:2px solid var(--blue);
+  box-shadow:0 0 15px rgba(0,170,255,.4);
 }
 
+/* HERO */
 .hero{
-  background:
-    radial-gradient(circle at top, rgba(0,170,255,.25), transparent 38%),
-    linear-gradient(180deg,#07111d,#05080d 70%);
-  border-bottom:2px solid var(--blue);
-  padding:70px 20px 60px;
   text-align:center;
+  padding:70px 20px;
+  background:radial-gradient(circle at top, rgba(0,170,255,.2), transparent 40%);
 }
 
+/* LOGO */
 .logo-wrap{
-  max-width:230px;
-  margin:0 auto 24px;
-  filter:drop-shadow(0 0 18px rgba(0,170,255,.35));
+  display:inline-block;
+  padding:12px;
+  border-radius:14px;
+  background:rgba(0,170,255,.05);
+  box-shadow:0 0 30px rgba(0,170,255,.4);
 }
 
-.kicker{
-  color:var(--blue);
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  margin-bottom:12px;
+.logo-wrap img{
+  max-width:300px;
+  width:100%;
+  filter:drop-shadow(0 0 25px rgba(0,170,255,.9));
 }
 
+/* HEADLINE */
 .hero h1{
-  font-size:46px;
-  line-height:1.12;
-  margin-bottom:18px;
-  text-shadow:0 0 18px rgba(0,170,255,.45);
+  font-size:44px;
+  margin:20px 0;
+  text-shadow:0 0 20px rgba(0,170,255,.5);
 }
-
-.blue{color:var(--blue)}
 
 .hero p{
-  max-width:940px;
-  margin:0 auto 24px;
-  font-size:19px;
-  color:var(--muted);
+  max-width:800px;
+  margin:0 auto 25px;
+  font-size:18px;
+  color:#dfefff;
 }
 
-.hero-buttons{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:14px;
-  margin-top:25px;
-}
-
+/* BUTTONS */
 .btn{
   display:inline-block;
-  padding:15px 25px;
+  padding:16px 26px;
+  margin:6px;
   border-radius:10px;
   font-weight:900;
-  font-size:16px;
-  transition:.2s ease;
 }
 
 .btn-primary{
   background:linear-gradient(135deg,var(--blue),var(--blue2));
-  color:#00111d;
-  box-shadow:0 0 22px rgba(0,170,255,.65);
-}
-
-.btn-primary:hover{
-  background:linear-gradient(135deg,#35c2ff,#0099ff);
-  color:#00111d;
-  text-decoration:none;
-  transform:translateY(-2px);
+  color:#000;
+  box-shadow:0 0 20px rgba(0,170,255,.8);
 }
 
 .btn-secondary{
   border:2px solid var(--blue);
   color:var(--blue);
-  background:rgba(0,170,255,.07);
 }
 
-.btn-secondary:hover{
-  background:var(--blue);
-  color:#00111d;
-  text-decoration:none;
-}
-
-.hero-points{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:16px;
-  margin-top:24px;
-  color:#eaf6ff;
-  font-size:14px;
-  font-weight:bold;
-}
-
-.hero-points span{
-  border:1px solid rgba(0,170,255,.45);
-  background:rgba(0,170,255,.08);
-  padding:9px 12px;
-  border-radius:999px;
-}
-
-.sub-cta{
-  margin-top:22px;
-  color:#fff;
-  font-size:17px;
-  font-weight:900;
-}
-
-.strip{
-  background:#07111d;
-  border-top:1px solid rgba(0,170,255,.35);
-  border-bottom:1px solid rgba(0,170,255,.35);
-  padding:18px 20px;
-  text-align:center;
-  font-weight:900;
-  color:#fff;
-}
-
+/* SECTION */
 .section{
-  padding:62px 0;
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
 }
 
-.section-title{
+.section h2{
   text-align:center;
   color:var(--blue);
-  font-size:34px;
-  margin-bottom:12px;
-  text-shadow:0 0 14px rgba(0,170,255,.25);
+  margin-bottom:15px;
+  text-shadow:0 0 10px rgba(0,170,255,.4);
 }
 
-.section-subtitle{
+.section p{
   text-align:center;
-  max-width:900px;
-  margin:0 auto 34px;
-  color:var(--muted);
-  font-size:17px;
+  margin-bottom:30px;
 }
 
-.grid-2{
+/* CARDS */
+.grid{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:24px;
-}
-
-.grid-3{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
 }
 
 .card{
-  background:linear-gradient(180deg,var(--card),#0a1018);
-  border:1px solid rgba(0,170,255,.22);
-  border-radius:16px;
-  padding:24px;
-  box-shadow:0 0 22px rgba(0,0,0,.35);
+  background:#0b1420;
+  padding:20px;
+  border-radius:14px;
+  border:1px solid rgba(0,170,255,.3);
+  box-shadow:0 0 15px rgba(0,170,255,.2);
 }
 
-.card h3{
-  color:var(--blue);
-  font-size:24px;
-  margin-bottom:12px;
-}
-
-.card p{
-  color:#eef7ff;
-  margin-bottom:14px;
-}
-
-.review-card{
-  background:#0f1722;
-  border-left:5px solid var(--blue);
-}
-
+/* REVIEWS */
 .stars{
   color:var(--blue);
   font-size:22px;
-  margin-bottom:10px;
-  text-shadow:0 0 12px rgba(0,170,255,.7);
 }
 
-.review-button-wrap{
-  text-align:center;
-  margin:25px 0;
-}
-
-.review-big{
-  display:inline-block;
-  background:linear-gradient(135deg,var(--blue),var(--blue2));
-  color:#00111d;
-  font-size:22px;
-  font-weight:900;
-  padding:18px 30px;
-  border-radius:12px;
-  text-decoration:none;
-  box-shadow:0 0 24px rgba(0,170,255,.85);
-}
-
-.service-areas{
-  background:#07111d;
-  border-top:2px solid var(--blue);
-  border-bottom:2px solid rgba(0,170,255,.35);
-}
-
-.area-tags{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  justify-content:center;
-}
-
-.area-tags span{
-  background:#0f1722;
-  border:1px solid rgba(0,170,255,.55);
-  color:#fff;
-  padding:10px 14px;
-  border-radius:999px;
-  font-weight:900;
-}
-
-.recent-work .card img{
+/* IMAGES */
+.card img{
   width:100%;
   border-radius:12px;
-  margin-bottom:15px;
-  aspect-ratio:4/3;
-  object-fit:cover;
-  border:1px solid rgba(0,170,255,.35);
+  margin-bottom:10px;
 }
 
-.cta-section{
-  background:
-    radial-gradient(circle at center, rgba(0,170,255,.22), transparent 45%),
-    #07111d;
+/* CTA */
+.cta{
+  text-align:center;
+  background:#08121d;
+  padding:50px 20px;
   border-top:2px solid var(--blue);
   border-bottom:2px solid var(--blue);
-  text-align:center;
-  padding:62px 20px;
 }
 
-.cta-section h2{
-  color:var(--blue);
-  font-size:36px;
-  margin-bottom:12px;
-}
-
-.cta-section p{
-  max-width:900px;
-  margin:0 auto 22px;
-  color:#e7f5ff;
-  font-size:18px;
-}
-
-.footer{
-  background:#02050a;
-  border-top:1px solid rgba(0,170,255,.25);
-  text-align:center;
-  padding:32px 20px;
-  color:#bcd3e5;
-  font-size:14px;
-}
-
-.footer p{margin-bottom:8px}
-
+/* STICKY CALL */
 .sticky-call{
   position:fixed;
   bottom:0;
   left:0;
   right:0;
   background:linear-gradient(135deg,var(--blue),var(--blue2));
-  color:#00111d;
+  color:#000;
   text-align:center;
-  padding:16px 10px;
+  padding:15px;
   font-weight:900;
-  font-size:18px;
-  z-index:9999;
-  box-shadow:0 0 25px rgba(0,170,255,.7);
+  box-shadow:0 0 25px rgba(0,170,255,.8);
 }
 
+/* FLOATING REVIEW */
 .floating-review{
   position:fixed;
-  right:14px;
-  bottom:78px;
-  background:#06101b;
-  color:#fff;
+  right:15px;
+  bottom:80px;
+  background:#000;
   border:2px solid var(--blue);
-  padding:12px 16px;
-  border-radius:999px;
-  font-weight:900;
-  z-index:9999;
-  box-shadow:0 0 20px rgba(0,170,255,.65);
+  padding:12px 15px;
+  border-radius:50px;
+  box-shadow:0 0 20px rgba(0,170,255,.7);
 }
 
-@media(max-width:900px){
-  .grid-2,.grid-3{grid-template-columns:1fr}
-  .hero h1{font-size:34px}
-  .section-title,.cta-section h2{font-size:29px}
-}
-
-@media(max-width:600px){
-  .hero{padding:55px 18px 45px}
-  .hero h1{font-size:29px}
-  .hero p{font-size:16px}
-  .btn{width:100%;max-width:330px}
-  .card{padding:20px}
-  .floating-review{font-size:13px;right:8px}
-}
 </style>
 </head>
 
 <body>
 
 <div class="top-bar">
-  Call Now For Free Estimate:
-  <a href="tel:9418127819">941-812-7819</a>
+CALL NOW: <a href="tel:9418127819">941-812-7819</a>
 </div>
 
 <section class="hero">
-  <div class="container">
-    <div class="logo-wrap">
-      <img src="logo.png" alt="In Sawdust We Trust Tree Service Logo">
-    </div>
 
-    <div class="kicker">Venice • Sarasota County • Select Manatee County Jobs</div>
-
-    <h1>
-      Professional Tree Removal in<br>
-      <span class="blue">Venice & Sarasota County</span>
-    </h1>
-
-    <p>
-      Fast, safe, professional tree removal, tree trimming, stump grinding, storm cleanup,
-      and emergency tree service for homeowners and properties throughout Venice,
-      Sarasota County, Nokomis, Osprey, Englewood, North Port, Sarasota, and select nearby Manatee County areas.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="tel:9418127819" class="btn btn-primary">CALL NOW FOR FREE ESTIMATE</a>
-      <a href="sms:+19418127819" class="btn btn-secondary">TEXT FOR FAST QUOTE</a>
-      <a href="#services" class="btn btn-secondary">VIEW SERVICES</a>
-      <a href="#reviews" class="btn btn-secondary">SEE REVIEWS</a>
-    </div>
-
-    <div class="hero-points">
-      <span>✔ 5-Star Rated Tree Service</span>
-      <span>✔ Licensed & Insured</span>
-      <span>✔ Same-Day Service Available</span>
-      <span>✔ Venice & Sarasota County Focused</span>
-    </div>
-
-    <p class="sub-cta">
-      Ask about our additional home services while we’re on-site — save time and get multiple projects handled in one visit.
-    </p>
-  </div>
-</section>
-
-<div class="strip">
-  Same-Day Service Available • Free Estimates • Fast Response • Tree Service + Property Services
+<div class="logo-wrap">
+<img src="logo-blue.png" alt="In Sawdust We Trust Tree Service">
 </div>
 
-<section class="section" id="reviews">
-  <div class="container">
-    <div class="review-button-wrap">
-      <a class="review-big" href="https://g.page/r/CTsB44IGDOBgEAE/review" target="_blank">
-        ⭐ Leave a 5-Star Review
-      </a>
-    </div>
+<h1>Tree Removal in Venice & Sarasota County</h1>
 
-    <h2 class="section-title">⭐⭐⭐⭐⭐ 5-Star Reviews</h2>
-    <p class="section-subtitle">
-      See what real customers are saying about In Sawdust We Trust Tree Service.
-    </p>
+<p>
+Fast, safe, professional tree service, trimming, storm cleanup, and property services.
+</p>
 
-    <div class="grid-2">
-      <div class="card review-card">
-        <div class="stars">★★★★★</div>
-        <p>"Joe and his team did an amazing job with cutting trees down in our backyard. They were very skilled and I was impressed with their work. Very personable group of men and the pricing was great. I highly recommend using these guys!"</p>
-        <strong>- Nicholas Nunkovich</strong>
-      </div>
+<a href="tel:9418127819" class="btn btn-primary">CALL NOW</a>
+<a href="#services" class="btn btn-secondary">VIEW SERVICES</a>
 
-      <div class="card review-card">
-        <div class="stars">★★★★★</div>
-        <p>"These guys will be my go to tree guys from now on! They did a fantastic job and left absolutely no mess behind. Joel was great and easy to work with which is nice to come by these days. I will be referring this company to all my friends!"</p>
-        <strong>- Tammy</strong>
-      </div>
+<p style="margin-top:20px;font-weight:bold;">
+Ask about our additional home services while we’re on-site — save time and get multiple projects handled in one visit.
+</p>
 
-      <div class="card review-card">
-        <div class="stars">★★★★★</div>
-        <p>"All ways does what he says he will do on a timely manner I took down diseased trees on my property and cleaned up the debris removed the stumps and now I can plant new trees. So glad we found this company a five star man"</p>
-        <strong>- Ticia Agri</strong>
-      </div>
-
-      <div class="card review-card">
-        <div class="stars">★★★★★</div>
-        <p>"Prompt, courteous and did a great job trimming my Bismark palm at a reasonable price. Highly recommend!"</p>
-        <strong>- Linda Laubach</strong>
-      </div>
-
-      <div class="card review-card">
-        <div class="stars">★★★★★</div>
-        <p>"Can’t speak highly enough of them. Picked up on first call, super fast visit for quote, on the spot agreement, next day action, & had it all wrapped up in half a day. I couldn’t be happier. Great guys."</p>
-        <strong>- Joey</strong>
-      </div>
-    </div>
-  </div>
 </section>
 
-<section class="section service-areas" id="areas">
-  <div class="container">
-    <h2 class="section-title">High-Value Sarasota County Service Areas</h2>
-    <p class="section-subtitle">
-      Our main focus is Venice and Sarasota County because that is where the money work is:
-      homeowners, larger properties, storm cleanup, trimming, removals, and repeat property service jobs.
-    </p>
+<section class="section" id="reviews">
 
-    <div class="area-tags">
-      <span>Venice</span>
-      <span>South Venice</span>
-      <span>Nokomis</span>
-      <span>Osprey</span>
-      <span>Englewood</span>
-      <span>North Port</span>
-      <span>Sarasota</span>
-      <span>Siesta Key</span>
-      <span>Palmer Ranch</span>
-      <span>Laurel</span>
-      <span>Lakewood Ranch</span>
-      <span>Select Manatee County Jobs</span>
-    </div>
-  </div>
+<h2>⭐⭐⭐⭐⭐ 5-Star Reviews</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="stars">★★★★★</div>
+<p>Joe and his team did an amazing job with cutting trees down in our backyard...</p>
+</div>
+
+<div class="card">
+<div class="stars">★★★★★</div>
+<p>These guys will be my go to tree guys from now on! Fantastic job...</p>
+</div>
+
+</div>
+
 </section>
 
 <section class="section" id="services">
-  <div class="container">
-    <h2 class="section-title">Our Tree Services</h2>
-    <p class="section-subtitle">
-      Professional tree service done right the first time. Fast response, safe work,
-      clean job sites, and dependable service across Venice and Sarasota County.
-    </p>
 
-    <div class="grid-2">
-      <div class="card">
-        <h3>Tree Removal</h3>
-        <p>Safe removal of dead, dangerous, storm-damaged, unwanted, or overgrown trees near homes, roofs, fences, driveways, and property lines.</p>
-        <a href="tel:9418127819" class="btn btn-primary">Call For Tree Removal</a>
-      </div>
+<h2>Tree Services</h2>
 
-      <div class="card">
-        <h3>Tree Trimming</h3>
-        <p>Professional trimming to improve safety, appearance, roof clearance, driveway clearance, and overall tree health.</p>
-        <a href="tel:9418127819" class="btn btn-primary">Call For Trimming</a>
-      </div>
+<div class="grid">
 
-      <div class="card">
-        <h3>Emergency Tree Service</h3>
-        <p>Fast response for fallen trees, hanging limbs, blocked driveways, storm damage, and urgent hazards.</p>
-        <a href="tel:9418127819" class="btn btn-primary">Call Emergency Service</a>
-      </div>
+<div class="card">
+<h3>Tree Removal</h3>
+<p>Safe removal of dangerous trees.</p>
+</div>
 
-      <div class="card">
-        <h3>Storm Cleanup</h3>
-        <p>Cleanup of fallen branches, debris, broken limbs, and storm-damaged trees after Florida weather hits hard.</p>
-        <a href="tel:9418127819" class="btn btn-primary">Call For Cleanup</a>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="card">
+<h3>Tree Trimming</h3>
+<p>Professional trimming and maintenance.</p>
+</div>
 
-<section class="section" id="home-services">
-  <div class="container">
-    <h2 class="section-title">Additional Home & Property Services</h2>
-    <p class="section-subtitle">
-      Tree service is the main focus, but while we’re already on-site, you can ask about
-      additional home and property services to get more handled in one visit.
-    </p>
+<div class="card">
+<h3>Storm Cleanup</h3>
+<p>Cleanup after storms and debris removal.</p>
+</div>
 
-    <div class="grid-3">
-      <div class="card">
-        <h3>Handyman Services</h3>
-        <p>General repairs, punch-list work, small projects, maintenance, and property improvement help.</p>
-      </div>
+</div>
 
-      <div class="card">
-        <h3>Flooring</h3>
-        <p>Hardwood glue-down, nail-down hardwood, flooring repairs, and related home improvement work.</p>
-      </div>
-
-      <div class="card">
-        <h3>Landscaping</h3>
-        <p>Cleanups, curb appeal improvements, small landscape projects, and property cleanup after tree work.</p>
-      </div>
-
-      <div class="card">
-        <h3>Lawn Care</h3>
-        <p>Yard cleanup, trimming, basic lawn care, and property maintenance services.</p>
-      </div>
-
-      <div class="card">
-        <h3>Pressure Washing</h3>
-        <p>Driveways, walkways, patios, exterior surfaces, and cleanup work to make the property look finished.</p>
-      </div>
-
-      <div class="card">
-        <h3>One Visit, More Done</h3>
-        <p>Ask about our additional home services while we’re on-site — save time and get multiple projects handled in one visit.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section recent-work">
-  <div class="container">
-    <h2 class="section-title">Recent Work</h2>
-    <p class="section-subtitle">Real job photos from completed tree work.</p>
-
-    <div class="grid-3">
-      <div class="card">
-        <img src="FB_IMG_1776380865070.jpg" alt="Completed tree removal job with stump ground down">
-        <h3>Complete Tree Removal</h3>
-        <p>Full removal with cleanup and stump grinding completed safely and professionally.</p>
-      </div>
-
-      <div class="card">
-        <img src="FB_IMG_1776380856424.jpg" alt="Large tree cut using lift equipment beside residential property">
-        <h3>High-Risk Tree Work</h3>
-        <p>Large tree handled carefully with professional equipment near residential structures.</p>
-      </div>
-
-      <div class="card">
-        <img src="FB_IMG_1776380879706.jpg" alt="Crew cleaning up branches and debris after tree work">
-        <h3>Cleanup Done Right</h3>
-        <p>Debris cleared and property cleaned up after professional tree work was completed.</p>
-      </div>
-    </div>
-  </div>
 </section>
 
 <section class="section">
-  <div class="container">
-    <h2 class="section-title">Why Customers Call Us</h2>
-    <p class="section-subtitle">
-      We focus on fast response, safe work, clean results, and getting the job done right.
-    </p>
 
-    <div class="grid-3">
-      <div class="card">
-        <h3>Fast Response</h3>
-        <p>When you need tree work done, we move quickly and show up ready to work.</p>
-      </div>
+<h2>Recent Work</h2>
 
-      <div class="card">
-        <h3>Professional Service</h3>
-        <p>We handle dangerous trees, trimming, cleanup, storm damage, and property work with care and experience.</p>
-      </div>
+<div class="grid">
 
-      <div class="card">
-        <h3>Free Estimates</h3>
-        <p>We inspect the job in person and give an honest estimate based on the work needed.</p>
-      </div>
-    </div>
-  </div>
+<div class="card">
+<img src="FB_IMG_1776380865070.jpg">
+</div>
+
+<div class="card">
+<img src="FB_IMG_1776380856424.jpg">
+</div>
+
+<div class="card">
+<img src="FB_IMG_1776380879706.jpg">
+</div>
+
+</div>
+
 </section>
 
-<section class="cta-section">
-  <h2>Need Tree Service in Venice or Sarasota County?</h2>
-  <p>
-    Call In Sawdust We Trust Tree Service today for tree removal, tree trimming,
-    storm cleanup, stump grinding, emergency tree service, and additional home services.
-  </p>
+<section class="cta">
 
-  <div class="hero-buttons">
-    <a href="tel:9418127819" class="btn btn-primary">CALL NOW – FREE ESTIMATE TODAY</a>
-    <a href="sms:+19418127819" class="btn btn-secondary">TEXT FOR FAST QUOTE</a>
-  </div>
+<h2>Need Tree Service Now?</h2>
+
+<a href="tel:9418127819" class="btn btn-primary">CALL NOW</a>
+
 </section>
 
-<footer class="footer">
-  <p><strong>In Sawdust We Trust Tree Service</strong></p>
-  <p>Tree Removal • Tree Trimming • Stump Grinding • Storm Cleanup • Emergency Tree Service • Home Services</p>
-  <p>Serving Venice, Sarasota County & Select Nearby Manatee County Areas</p>
-  <p>Phone: <a href="tel:9418127819">941-812-7819</a></p>
-  <p>© 2026 In Sawdust We Trust Tree Service. All rights reserved.</p>
-  <p><a href="/privacy-policy.html">Privacy Policy</a></p>
-</footer>
+<a class="floating-review" href="https://g.page/r/CTsB44IGDOBgEAE/review">Leave Review ⭐</a>
 
-<a class="floating-review" href="https://g.page/r/CTsB44IGDOBgEAE/review" target="_blank">
-  Leave A Review ⭐
-</a>
-
-<a class="sticky-call" href="tel:9418127819">
-  TAP TO CALL NOW – 941-812-7819
-</a>
+<a class="sticky-call" href="tel:9418127819">TAP TO CALL</a>
 
 </body>
 </html>
